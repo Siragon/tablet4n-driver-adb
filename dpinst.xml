@@ -16,7 +16,7 @@ along with Síragon AOSU. If not, see <http://www.gnu.org/licenses/>.
 <dpinst>
 	<scanHardware/>
 	<search>
-		<subDirectory>*</subDirectory>
+		<subDirectory>usb_driver</subDirectory>
 	</search>
 	<forceIfDriverIsNotBetter/>
 	<language code="0x0C0A">
@@ -31,7 +31,7 @@ along with Síragon AOSU. If not, see <http://www.gnu.org/licenses/>.
 		<finishText>Disfruta de tu Tablet 4N.</finishText>
 		<eula type="txt" path="es-es/eula.txt"/>
 	</language>
-	<icon>installer.ico</icon>
-	<headerPath>header.bmp</headerPath>
-	<watermarkPath>toaster.bmp</watermarkPath>
+	<icon>images/installer.ico</icon>
+	<headerPath>images/header.bmp</headerPath>
+	<watermarkPath>images/toaster.bmp</watermarkPath>
 </dpinst>
