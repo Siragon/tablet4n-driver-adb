@@ -1,0 +1,6 @@
+# Thumbs.db
+*.db
+
+# Build output
+Tablet4N_ADB.exe
+Tablet4N_ADB.7z
