@@ -13,6 +13,6 @@ REM  You should have received a copy of the GNU General Public License
 REM  along with Síragon AOSU. If not, see <http://www.gnu.org/licenses/>. 
 
 del Tablet4N_ADB.7z
-plugins\7z.exe a Tablet4N_ADB.7z ..\* -x!installer -x!.git -x!images\Thumbs.db -x!*\dpinst.properties -x!*\inf.properties -x!*\installer.properties -x!*\notice.txt
+plugins\7z.exe a Tablet4N_ADB.7z ..\* -x!installer -x!.git -x!images\Thumbs.db -x!*\dpinst.properties -x!*\inf.properties -x!*\installer.properties -x!*\notice.txt -x!.gitignore
 "%ProgramFiles(x86)%\NSIS\Unicode\makensis.exe" installer.nsi
 @pause
