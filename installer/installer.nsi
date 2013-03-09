@@ -16,7 +16,7 @@
 Name "Controladores ADB - Tablet 4N"
 OutFile "Tablet4N_ADB.exe"
 AutoCloseWindow True
-InstallDir "C:\Síragon\Tablet4N\drivers\adb"
+InstallDir "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb"
 Icon "../images/installer.ico"
 UninstallIcon "../images/installer.ico"
 RequestExecutionLevel admin
@@ -52,11 +52,11 @@ SectionEnd
 
 Function createUnInstallRegEntries
   WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "DisplayName" "Controladores ADB - Tablet 4N"
-  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "UninstallString" "C:\Síragon\aosu\uninstall\helper_driver.exe"
-  ;WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "ModifyPath" "C:\${XULAPP_VENDOR}\${XULAPP_PRODUCTNAME}\uninstall\helper.exe"
-  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "InstallSource" "C:\Síragon\Tablet4N\drivers\adb\Tablet4N_ADB.exe"
-  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "InstallLocation" "C:\Síragon\Tablet4N\drivers\adb"
-  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "DisplayIcon" "C:\Síragon\Tablet4N\drivers\adb\images\installer.ico"
+  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "UninstallString" "$PROGRAMFILES32\Síragon\aosu\uninstall\helper_driver.exe"
+  ;WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "ModifyPath" "$PROGRAMFILES32\${XULAPP_VENDOR}\${XULAPP_PRODUCTNAME}\uninstall\helper.exe"
+  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "InstallSource" "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb\Tablet4N_ADB.exe"
+  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "InstallLocation" "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb"
+  WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "DisplayIcon" "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb\images\installer.ico"
   WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "Publisher" "Síragon"
   WriteRegStr   HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "DisplayVersion" "1.0"
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Síragon - Drivers ADB Tablet 4N (v1.0)" "NoModify" 0x00000001
@@ -74,17 +74,17 @@ Function createUnInstallRegEntries
 FunctionEnd
 
 Function copyFilesToInstallDir
-	SetOutPath "C:\Síragon\Tablet4N\drivers\adb"
+	SetOutPath "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb"
 	File "Tablet4N_ADB.7z"
 	Nsis7z::Extract "Tablet4N_ADB.7z"
-	StrCpy $OUTDIR "C:\Síragon\Tablet4N\drivers\adb"
-	SetOutPath "C:\Síragon\Tablet4N\drivers\adb"
+	StrCpy $OUTDIR "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb"
+	SetOutPath "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb"
 	
 	${If} ${RunningX64}
-	   Exec '"C:\Síragon\Tablet4N\drivers\adb\dpinst_x64.exe"'
+	   Exec '"$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb\dpinst_x64.exe"'
 	${Else}
-	   Exec '"C:\Síragon\Tablet4N\drivers\adb\dpinst_x86.exe"'
+	   Exec '"$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb\dpinst_x86.exe"'
 	${EndIf}
-	Delete "C:\Síragon\Tablet4N\drivers\adb\Tablet4N_ADB.7z"
+	Delete "$PROGRAMFILES32\Síragon\drivers\Tablet4N\adb\Tablet4N_ADB.7z"
 	AllowSkipFiles off
 FunctionEnd

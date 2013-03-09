@@ -31,6 +31,27 @@ along with Síragon AOSU. If not, see <http://www.gnu.org/licenses/>.
 		<finishText>Disfruta de tu Tablet 4N.</finishText>
 		<eula type="txt" path="es-es/eula.txt"/>
 	</language>
+	<language code="0x0409">
+		<dpinstTitle>Driver Installation for Tablet 4N</dpinstTitle>
+		<welcomeTitle>Welcome to the Install Wizard for drivers!</welcomeTitle>
+		<welcomeIntro>This wizard will take you step by step through the installation. You must enable debug options of your device. This installer was created in the Department of Research and Development Síragon.</welcomeIntro>
+		<eulaHeaderTitle>End User License</eulaHeaderTitle>
+		<eulaYesButton>I agree the License Terms</eulaYesButton>
+		<eulaNoButton>I don't accept the License Terms</eulaNoButton>
+		<installHeaderTitle>Installing the software from your mobile device...</installHeaderTitle>
+		<finishTitle>Congratulations! You have completed the installation of your mobile device.</finishTitle>
+		<finishText>Enjoy your Tablet 4N.</finishText>
+		<eula type="txt" path="en-us/eula.txt"/>
+	</language>
+	<!-- Arabic
+	<language code="0x0401">
+	</language>-->
+	<!-- Portuguese Brasil 
+	<language code="0x0416">
+	</language>-->
+	<!-- Italian 
+	<language code="0x0410">
+	</language>-->
 	<icon>images/installer.ico</icon>
 	<headerPath>images/header.bmp</headerPath>
 	<watermarkPath>images/toaster.bmp</watermarkPath>

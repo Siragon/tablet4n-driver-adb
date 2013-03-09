@@ -1,1 +1,1 @@
-The .dll files here are distributed by Microsoft Corporation as part of the Windows Driver Kit (available at http://www.microsoft.com/whdc/resources/downloads.mspx) and included here as permitted by the Microsoft Software License Terms.
+Los archivos .dll son distribuidos por Microsoft Corporation como parte del Kit de Controladores de Windows (disponible en http://www.microsoft.com/whdc/resources/downloads.mspx) e incluidos aquí según lo permitido por los Términos de la Licencia de Software de Microsoft.
