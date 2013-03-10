@@ -25,5 +25,12 @@ Translators Team
 
 [Fatma Yusef](https://www.transifex.com/accounts/profile/fatma2210/ "Transifex profile")
 
-![Fatma Yusef](https://secure.gravatar.com/avatar/e0d9b9fd3f6d677c6427f7cfe7f3b351?s=96&d=identicon "Yusef")
+![Fatma Yusef](https://secure.gravatar.com/avatar/e0d9b9fd3f6d677c6427f7cfe7f3b351?s=96&d=identicon "Fatma Yusef")
 
+[Giovanny Gongora](https://www.transifex.com/accounts/profile/Gioyik/ "Transifex profile")
+
+![Giovanny Gongora](https://secure.gravatar.com/avatar/8cf49d39d44f100e1afed5c5a259fed4?s=96&d=identicon "Giovanny Gongora")
+
+[Osledy Bazo](https://www.transifex.com/accounts/profile/osledybazo/ "Transifex profile")
+
+![Osledy Bazo](https://secure.gravatar.com/avatar/e4d021a3d5041571281be90b9148d1fd?s=96&d=identicon "Osledy Bazo")
